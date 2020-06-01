@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="FreshEats.css">
+
+
+<Title>FreshEats </Title>
+</head>
+<body>
+<ul>
+
+    <li1 style="float:left"><a href=Homepage2.html><img src="images/Logo2.jpg"  alt="Avatar" class="image"></a></li1 >
+<li style="float:left"><a href=OurEats.html>Our Eats</a></li>
+    <li style="float:left"><a href="javascript:void(0)">About us</a></li>
+    <li style="float:left"><a href="Recipes.html">Recipes</a></li>
+    <li style="float:left"><a href="javascript:void(0)">Merch</a>  </li>
+    <li style="float:left">    <a href="javascript:void(0)">News</a></li>
+    <li style="float:right"><a href="javascript:void(0)">Log in</a></li>
+    <li style="float:right"><a href="javascript:void(0)">Register</a></li>
+
+  </ul>
+  </div>
+  <br>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <button class="tablink" onclick="openPage('Home', this, 'green')"id="defaultOpen">Vegetarian</button>
+  <button class="tablink" onclick="openPage('News', this, 'green')" >Meatlovers</button>
+  <button class="tablink" onclick="openPage('Contact', this, 'green')">Dessert</button>
+  <button class="tablink" onclick="openPage('About', this, 'orange')">Indian</button>
+
+  <div id="Home" class="tabcontent">
+    <img src="Images/Recipes.jpg" width=400px height=360px>
+    <img src="Images/Recipes.jpg" width=440px height=360px>
+    <img src="Images/Recipes.jpg" width=420px height=360px>
+
+    <div class="btn-group">
+    <button class="button">Add ingredients to Countdown cart</button>
+    <button class="button">Make it a meal kit!</button>
+    <button class="button">Sign up for a weekly plan</button>
+
+  </div>
+
+  <p style="clear:both"><br></p>
+  </div>
+
+  <div id="News" class="tabcontent">
+    <h3>News</h3>
+    <p>Some news this fine day!</p>
+  </div>
+
+  <div id="Contact" class="tabcontent">
+    <h3>Contact</h3>
+    <p>Get in touch, or swing by for a cup of coffee.</p>
+  </div>
+
+  <div id="About" class="tabcontent">
+    <h3>About</h3>
+    <p>Who we are and what we do.</p>
+  </div>
+
+  <script>
+  function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+
+</body>
+</html>
