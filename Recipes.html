@@ -87,6 +87,30 @@
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
   </script>
+  <button class="open-button" onclick="openForm()">Need help?</button>
+
+  <div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Chat to us!</h1>
+
+      <label for="msg"><b>Hi, how can we help today?</b></label>
+      <textarea placeholder="Type message.." name="msg" required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+  <script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+
   <footer>
   <ul>
     <h3 class="pink">Contact</h3>
