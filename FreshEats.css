@@ -224,6 +224,30 @@ display: block;
 float: left;
 
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color:white;
+  padding: 10px;
+  font-family: sans-serif;
+}
+h1 {font-family: sans-serif;
+text-align: center;
+color:#006622}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-family: sans-serif;
+}
 footer ul {
   list-style: none;
   display: block;
