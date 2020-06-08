@@ -6,7 +6,7 @@ ul li{
   background-color: white;
 
   font-family: sans-serif;
-  font-size: 12px;
+  font-size: 16px;
 
   display: block;
 
@@ -47,6 +47,21 @@ a:hover {
 color:#00ff00;
 text-decoration : none;
 }
+button {  background-color:#e6e600; /* Green */
+  border: 1px;
+  border-color: red;
+   border-radius: 15px;
+   box-shadow: 0 9px #999;
+  color: #e6e600;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+width: 420px;}
+
 .paragraph {
   position: -webkit-sticky;
   position: sticky;
@@ -104,7 +119,7 @@ text-decoration : none;
   font-size: 16px;
   cursor: pointer;
   float: left;
-width: 420px;
+width: 32%;
 
 }
 
@@ -199,26 +214,7 @@ width: 420px;
 }
 
 }
-footer ul{
-  text-align: center;
-  padding: 120px 120px;
-  background-color: #99ff99;
-  font-family: sans-serif;
 
-
-}
-
-footer ul {
-  list-style: none;
-  display: block;
-  float: left;
-  font-family: sans-serif;
-
-}
-footer h3 {
-  font-weight: 100;
-  margin-bottom: 0;
-}
 li4 {list-style: none;
 display: block;
 float: left;
@@ -248,23 +244,4 @@ color:#006622}
   grid-column-end: 3;
   font-family: sans-serif;
 }
-footer ul {
-  list-style: none;
-  display: block;
-  float: left;
-  background-color: white;
-}
-footer h3 {
-  font-weight: 100;
-  margin-bottom: 0;
-}
-.pink{color: green;}
-.jolly{color: white;}
-.li4{color: white;}
-.again{color: white;}
-.ok{color: white;}
-.erase{color:green;}
-.erase2{color:white;}
-.erase3{color:white;}
-.social{color: white;}
-.delete{color:white;}
+footer {background-color: #ffd699}

@@ -7,13 +7,28 @@
 
 
 <Title>FreshEats </Title>
-</head>
+
 <style>
-body {
-  background: url("Images/Cover.jpg") no-repeat fixed center;
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("Images/Expensive.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color:#44cc00;
   border: none;
   color: white;
   padding: 20px;
@@ -25,7 +40,7 @@ body {
   cursor: pointer;
   border-color: red;
    border-radius: 15px;
-   box-shadow: 0 9px #006622;
+   box-shadow: 0 9px #2a8000;
 }
 .button4 {border-radius: 20px;
 padding: 100px 100px
@@ -42,29 +57,25 @@ float: left; }
 }
 
 </style>
+</head>
+<body>
+  <ul>
+
+      <li1 style="float:left"><a href="index.html"><img src="Images/Logo2.jpg"  alt="Avatar" class="image"></a></li1 >
+  <li style="float:left"><a href=OurEats.html><b>Our Eats</a></li>
+      <li style="float:left"><a href="AboutUs.html">About us</a></li>
+      <li style="float:left"><a href="Recipes.html">Recipes</a></li>
+      <li style="float:left"><a href="Merch.html">Merch</a>  </li>
+      <li style="float:left">    <a href="javascript:void(0)">News</a></li>
+      <li style="float:right"><a href="javascript:void(0)">Log in</a></li>
+      <li style="float:right"><a href="javascript:void(0)">Register</a></li>
+      <li style="search-container"><form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+
+          </form></li>
 
 
-
-
-
-
-<ul>
-
-    <li1 style="float:left"><a href="index.html"><img src="Images/Logo2.jpg"  alt="Avatar" class="image"></a></li1 >
-<li style="float:left"><a href=OurEats.html>Our Eats</a></li>
-    <li style="float:left"><a href="AboutUs.html">About us</a></li>
-    <li style="float:left"><a href="Recipes.html">Recipes</a></li>
-    <li style="float:left"><a href="Merch.html">Merch</a>  </li>
-    <li style="float:left">    <a href="javascript:void(0)">News</a></li>
-    <li style="float:right"><a href="javascript:void(0)">Log in</a></li>
-    <li style="float:right"><a href="javascript:void(0)">Register</a></li>
-    <li style="search-container"><form action="/action_page.php">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><i class="fa fa-search"><a href="https://www.google.com/"></a></i></button>
-        </form></li>
-
-
-  </ul>
+    </ul>
 
 
 
@@ -77,233 +88,60 @@ float: left; }
 
 
 
-<a href="OurEats.html"><button class="button button4"style="float:right">Our Eats</button></a>
+  <a href="OurEats.html"><button class="button"style="float:right">Our Eats</button></a>
 
 
-<button class="open-button" onclick="openForm()">Need help?</button>
+  <button class="open-button" onclick="openForm()">Need help?</button>
 
-<div class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Chat to us!</h1>
+  <div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Chat to us!</h1>
 
-    <label for="msg"><b>Hi, how can we help today?</b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
+      <label for="msg"><b>Hi, how can we help today?</b></label>
+      <textarea placeholder="Type message.." name="msg" required></textarea>
 
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
+      <button type="submit" class="btn">Send</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
 
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
+  <script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
 
+
+
+<div class="bg"></div>
+
+
+
+
+
+
+<hr>
 
   <footer>
-  <ul>
-    <h3 class="pink">Contact</h3>
-    <br>
-    <li4>Countdown Head Office</li>
-      <br>
-    <li4>+61 9 887 4565</li>
-      <br>
-    <li4>PO Box 4356</li>
-      <br>
-    <li4>Auckland 1046</li>
-      <br>
-    <li4>New Zealand</li>
-      <br>
-
-      <br>
-  </ul>
-  <ul>
-    <h3 class="jolly">Header</h3>
-    <br>
-      <class="li4" style= color:white;>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-  </ul>
-  <ul>
-    <h3 class="again">Header</h3>
-    <br>
-    <class="li4" style= color:white;>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-  </ul>
-  <ul>
-    <h3 class="ok">Header</h3>
-    <br>
-    <class="li4" style= color:white;>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-  </ul>
-  <ul>
-    <h3 class="erase">Site Map</h3>
-    <br>
-    <class="li4" style= color:blue><a href="OurEats.html">Our Eats</li></a>
-      <br>
-    <class="li4" style=color:blue><a href="AboutUs.html">About Us</li></a>
-      <br>
-    <li4><a href="Recipes.html">Recipes</li></a>
-      <br>
-    <li4><a href="Merch.html">Merch</li></a>
-      <br>
-    <li4><a href="News.html">News</li></a>
-      <br>
-    <li4><a href="Login.html">Log in</li></a>
-      <br>
-  </ul>
-  <ul>
-    <h3 class="erase2">Header</h3>
-    <br>
-  <class="li4" style= color:white;>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-
-
-
-
-  </ul>
-  <ul>
-    <h3 class="erase3">Header</h3>
-    <br>
-    <class="li4" style= color:white;>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-  </ul>
-  <ul>
-    <h3 class="social">Header</h3>
-    <br>
-    <li4><a href="#" class="fa fa-instagram"></a></li>
-      <br>
-    <class="li4" style=color:white;>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-  </ul>
-  <ul>
-    <h3 class="pink">Follow us</h3>
-    <br>
-    <li4><a href="#" class="fa fa-facebook"></a></li>
-      <br>
-  <class="li4" style=color:white;>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-    <li4>Some Link</li>
-      <br>
-  </ul>
-  <ul>
-    <h3 class="delete"> h</h3>
-    <br>
-    <li4><a href="#" class="fa fa-youtube"></a></li>
-      <br>
-    <class="li4" style=color:white;>Some link</li>
-      <br>
-    <li4>some link</li>
-      <br>
-    <li4>some linksomlinklink</li>
-
-      <br>
-    <li4></li>
-      <br>
-    <li4></li>
-      <br>
-  </ul>
+    <div class="grid-container">
+    <div class="grid-item"style= font-size:20px;><b>Contact</b><br><br>Countdown Head Office<br>P O Box 347883<br>Auckland 1041, NZ<br>Ph 0800 FRESH</div>
+    <div class="grid-item"style= font-size:20px><b>Site Map</b><a href="OurEats.html"><p>Our Eats</a></p><p>
+      <a href="AboutUs.html">About Us</a></p>
+      <p><a href="Recipes.html">Recipes</a></p>
+      <a href="Merch.html">Merch</a></p>
+      <a href="News.html">News</a></p>
+      <a href="Login.html">Login</a></p>
+    </div>
+    <div class="grid-item"><a href="#" class="fa fa-instagram"></a>&emsp;&emsp;<a href="#" class="fa fa-facebook">&ensp;&emsp;&emsp;</a><a href="#" class="fa fa-youtube">&ensp;</a><br></div>
 
 
 
 </footer>
+<hr>
 
 
 
