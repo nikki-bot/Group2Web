@@ -39,40 +39,35 @@
 <br>
 <br>
 
-  <button class="tablink" onclick="openPage('Home', this, 'green')"id="defaultOpen">Eats for One</button>
-  <button class="tablink" onclick="openPage('News', this, 'green')" >Eats for Two</button>
-  <button class="tablink" onclick="openPage('Contact', this, 'green')">Eats for a Flat or Family</button>
-  <button class="tablink" onclick="openPage('About', this, 'orange')">Eats for Dessert</button>
+  <button class="tablink" onclick="openPage('EatsforOne', this, 'green')"id="defaultOpen">Eats for One</button>
+  <button class="tablink" onclick="openPage('EatsforTwo', this, '#009900')" >Eats for Two</button>
+  <button class="tablink" onclick="openPage('EatsforFlatorFamily', this, )">Eats for a Flat or Family</button>
 
-  <div id="Home" class="tabcontent">
+
+  <div id="EatsforOne" class="tabcontent">
 
     <img src="Images/Mealkit.jpg" width=32% height=>
     <img src="Images/Mealforone.jpg" width=32% height=>
     <img src="Images/mealforone2.jpg" width=32% height=>
     <div class="btn-group">
     <button class="button">Delivery or Click n Collect</button>
-  <a href="Recipes.html">  <button class="button">Go to Recipes for a mealkit</button></a>
-    <button class="button">Sign up for a weekly plan</button>
+  <a href="Recipes.html">  <button class="button" style="margin-left:20px;">Go to Recipes for a mealkit</button></a>
+    <a href="Recipes.html">  <button class="button" style="margin-left:20px;">Sign up for a weekly plan!</button></a>
 
   </div>
 
   <p style="clear:both"><br></p>
   </div>
 
-  <div id="News" class="tabcontent">
-    <h3>News</h3>
-    <p>Some news this fine day!</p>
+  <div id="EatsforTwo" class="tabcontent">
+    <img src="Images/Mealkit.jpg" width=32% height=>
   </div>
 
-  <div id="Contact" class="tabcontent">
-    <h3>Contact</h3>
-    <p>Get in touch, or swing by for a cup of coffee.</p>
+  <div id="EatsforFlatorFamily" class="tabcontent">
+    <img src="Images/Mealkit.jpg" width=32% height=>
   </div>
 
-  <div id="About" class="tabcontent">
-    <h3>About</h3>
-    <p>Who we are and what we do.</p>
-  </div>
+
 
   <script>
   function openPage(pageName,elmnt,color) {

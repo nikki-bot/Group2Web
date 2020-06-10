@@ -34,20 +34,24 @@
 <br>
 <br>
 
-  <button class="tablink" onclick="openPage('Home', this, 'green')"id="defaultOpen">Vegetarian</button>
-  <button class="tablink" onclick="openPage('News', this, 'green')" >Meatlovers</button>
-  <button class="tablink" onclick="openPage('Contact', this, 'green')">Dessert</button>
-  <button class="tablink" onclick="openPage('About', this, 'orange')">Indian</button>
+  <button class="tablink" onclick="openPage('Meatlovers', this, 'green')"id="defaultOpen">Meatlovers</button>
+  <button class="tablink" onclick="openPage('Vegetarian', this, 'green')" >Vegetarian</button>
 
-  <div id="Home" class="tabcontent">
+  <button class="tablink" onclick="openPage('Indian', this, 'green')">Indian</button>
+
+  <div id="Meatlovers" class="tabcontent">
 
     <img src="Images/Recipes.jpg" width=32% >
     <img src="Images/Recipes.jpg" width=32% >
     <img src="Images/Recipes.jpg" width=32% >
     <div class="btn-group">
     <button class="button">Add ingredients to Countdown cart</button>
-    <button class="button">Make it a meal kit!</button>
-    <button class="button">Sign up for a weekly plan</button>
+    <a href="Recipes.html">  <button class="button" style="margin-left:20px;">Make it a meal kit!</button></a>
+    <a href="Recipes.html">  <button class="button" style="margin-left:20px;">Sign up for a weekly plan!</button></a>
+<br>
+<br>
+<br>
+<br>
 
     <img src="Images/Recipes.jpg" width=32% >
     <img src="Images/Recipes.jpg" width=32% >
@@ -55,43 +59,44 @@
 
     <div class="btn-group">
     <button class="button">Add ingredients to Countdown cart</button>
-    <button class="button">Make it a meal kit!</button>
-    <button class="button">Sign up for a weekly plan</button>
+  <a href="Recipes.html">  <button class="button" style="margin-left:20px;">Make it a meal kit!</button></a>
+  <a href="Recipes.html">  <button class="button" style="margin-left:20px;">Sign up for a weekly plan!</button></a>
 
   </div>
 
   <p style="clear:both"><br></p>
   </div>
 
-  <div id="News" class="tabcontent">
-    <h3>News</h3>
-    <p>Some news this fine day!</p>
-  </div>
+</div>
 
-  <div id="Contact" class="tabcontent">
-    <h3>Contact</h3>
-    <p>Get in touch, or swing by for a cup of coffee.</p>
-  </div>
+<p style="clear:both"><br></p>
+</div>
 
-  <div id="About" class="tabcontent">
-    <h3>About</h3>
-    <p>Who we are and what we do.</p>
-  </div>
+<div id="Vegetarian" class="tabcontent">
 
-  <script>
-  function openPage(pageName,elmnt,color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(pageName).style.display = "block";
-    elmnt.style.backgroundColor = color;
+  <img src="Images/Mealkit.jpg" width=32% height=>
+</div>
+
+<div id="Indian" class="tabcontent">
+  <img src="Images/Mealkit.jpg" width=32% height=>
+</div>
+
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
   }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
 
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();

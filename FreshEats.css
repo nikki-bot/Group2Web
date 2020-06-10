@@ -62,36 +62,21 @@ button {  background-color:#e6e600; /* Green */
   float: left;
 width: 420px;}
 
-.paragraph {
-  position: -webkit-sticky;
-  position: sticky;
-  font-family: helvetica;
-  font-weight:bold;
-  color: white;
-  font-size: 16px;
-  background-color: #e0e0d1;
 
-  animation-name: bar;
-  animation-duration: 3s;
-  animation-iteration-count: 20;
-  text-align: center;
-}
-@keyframes bar {
-  from {background-color: white;}
-  to {background-color:   #666666;}
-
-}
 /* Style tab links */
 .tablink {
-  background-color: #00ff00;
+  background-color:#00ff00
+;
   color: white;
   float: left;
-
+  border: none;
+  border-radius: 1px;
+  box-shadow: none;;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  font-size: 16px;
-  width: 25%;
+  font-size: 17px;
+  width: 33%;
 }
 
 .tablink:hover {
@@ -103,8 +88,10 @@ width: 420px;}
   color: white;
   display: none;
   padding: 100px 20px;
+
   height: 100%;
 }
+
 .btn-group .button {
   background-color:#004d1a; /* Green */
   border: 1px;
@@ -138,10 +125,10 @@ width: 32%;
 .btn-group .button:hover {
   background-color: #3e8e41;
 }
-#Home {background-color:white;}
-#News {background-color:white;}
-#Contact {background-color:white;}
-#About {background-color:white;}
+#Meatlovers {background-color:white;}
+#Vegetarian {background-color:white;}
+#Indian {background-color:white;}
+
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
   background-color: #00ff00;
@@ -233,7 +220,7 @@ text-align: center;
 color:#006622}
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
@@ -244,4 +231,32 @@ color:#006622}
   grid-column-end: 3;
   font-family: sans-serif;
 }
-footer {background-color: #ffd699}
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
