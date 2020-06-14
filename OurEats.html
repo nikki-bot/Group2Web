@@ -7,6 +7,62 @@
 
 <Title>FreshEats </Title>
 </head>
+<style>
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 32%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.flip-box {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #006622;
+  color: #00ff00;
+  font-family: sans-serif;
+  transform: rotateY(180deg);
+}
+</style>
+
 
 <body>
 
@@ -46,28 +102,126 @@
 
   <div id="EatsforOne" class="tabcontent">
 
-    <img src="Images/Mealkit.jpg" width=32% height=>
-    <img src="Images/Mealforone.jpg" width=32% height=>
-    <img src="Images/mealforone2.jpg" width=32% height=>
+    <div class="row">
+    <div class="column"><div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="Images/Mealkit.jpg" alt="Paris" style="width:100%">
+    </div>
+    <div class="flip-box-back">
+      <h2>Sign up now!</h2>
+      <p>And get $10 off your first meal kit!</p>
+    </div>
+  </div>
+  </div>
+
+    </div>
+    <div class="column">
+      <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="Images/Mealforone.jpg" alt="Paris" style="width:100%">
+      </div>
+      <div class="flip-box-back">
+        <h2>Click the button below</h2>
+        <p>To get this recipe card with fresh ingredients delivered to your door and $10 off!</p>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="column">
+      <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="Images/mealforone2.jpg" alt="Paris" style="width:100%">
+      </div>
+      <div class="flip-box-back">
+        <h2>Click the button below</h2>
+        <p>Get $50 off your first weekly plan!</p>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
     <div class="btn-group">
     <button class="button">Delivery or Click n Collect</button>
-  <a href="Recipes.html">  <button class="button" style="margin-left:20px;">Go to Recipes for a mealkit</button></a>
-    <a href="Recipes.html">  <button class="button" style="margin-left:20px;">Sign up for a weekly plan!</button></a>
+  <a href="Recipes.html">  <button class="button" style="margin-left:20px;">Go to Recipes for a mealkit - $7</button></a>
+    <a href="Recipes.html">  <button class="button" style="margin-left:20px;">Sign up for a weekly plan! $60 for five meals</button></a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+    <div class="column"><div class="flip-box">
+    <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="Images/Toyourdoor.jpg" alt="Paris" style="width:100%">
+    </div>
+    <div class="flip-box-back">
+      <h2>Sign up now!</h2>
+      <p>And get $10 off your first meal kit! Delivered with all of your household needs or Click and Collect!</p>
+    </div>
+    </div>
+    </div>
+
+    </div>
+    <div class="column">
+      <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="Images/Cookingdinner.jpg" alt="Paris" style="width:100%">
+      </div>
+      <div class="flip-box-back">
+        <h2>Cooking and shopping made easy</h2>
+        <p>Simple, easy to follow recipe cards to make delicious meals, get $10 off any meal kit with recipe card and fresh ingredients!</p>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="column">
+      <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="Images/DinnerReady.jpg" alt="Paris" style="width:100%">
+      </div>
+      <div class="flip-box-back">
+        <h2>Click the button below</h2>
+        <p>Get $50 off your first weekly plan!</p>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
 
   </div>
+</div>
+
 
   <p style="clear:both"><br></p>
-  </div>
+
 
   <div id="EatsforTwo" class="tabcontent">
     <img src="Images/Mealkit.jpg" width=32% height=>
+    <img src="Images/Duo1.png" width=32%>
   </div>
 
   <div id="EatsforFlatorFamily" class="tabcontent">
     <img src="Images/Mealkit.jpg" width=32% height=>
   </div>
 
-
+<img src="Images/Coverimage2.png" width=100%>
 
   <script>
   function openPage(pageName,elmnt,color) {
@@ -111,21 +265,24 @@
   }
   </script>
 <hr>
-  <footer>
-    <div class="grid-container">
-    <div class="grid-item"style= font-size:20px;>Contact<br>Countdown Head Office<br>P O Box 347883<br>Auckland 1041, NZ<br>Ph 0800 FRESH</div>
-    <div class="grid-item"style= font-size:20px>Site Map<a href="OurEats.html"><p>Our Eats</a></p><p>
-      <a href="AboutUs.html">About Us</a></p>
-      <p><a href="Recipes.html">Recipes</a></p>
-      <a href="Merch.html">Merch</a></p>
-      <a href="News.html">News</a></p>
-      <a href="Login.html">Login</a></p>
-    </div>
-    <div class="grid-item"><a href="#" class="fa fa-instagram"></a>&emsp;&emsp;<a href="#" class="fa fa-facebook">&ensp;&emsp;&emsp;</a><a href="#" class="fa fa-youtube">&ensp;</a><br></div>
+<footer>
+  <div class="grid-container" >
+  <div class="grid-item"style= font-size:20px;><b>Contact</b><br><br>Countdown Head Office<br>P O Box 347883<br>Auckland 1041, NZ<br>Ph 0800 FRESH</div>
+  <div class="grid-item"style= font-size:20px;><b>Site Map</b><a href="OurEats.html"><p>Our Eats</a></p><p>
+    <a href="AboutUs.html">About Us</a></p>
+    <p><a href="Recipes.html">Recipes</a></p>
+    <a href="Merch.html">Merch</a></p>
+    <a href="News.html">News</a></p>
+    <a href="Login.html">Login</a></p>
+  </div>
 
-
-
-  </footer>
+  <div class="grid-item"><div class="icon-bar">
+      <div class="paragraph"style= font-size:20px;><p>Follow us!</p></div>
+<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+<a href="#" class="google"><i class="fa fa-google"></i></a>
+<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+<a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
 
 
 

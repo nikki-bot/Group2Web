@@ -217,7 +217,7 @@ float: left;
 }
 h1 {font-family: sans-serif;
 text-align: center;
-color:#006622}
+color:#004d1a}
 
 .grid-container > div {
 
@@ -230,6 +230,7 @@ color:#006622}
   grid-column-start: 1;
   grid-column-end: 3;
   font-family: sans-serif;
+  color:#004d1a;
 }
 .facebook {
   background: #3B5998;

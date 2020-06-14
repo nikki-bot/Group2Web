@@ -5,11 +5,32 @@
 <link rel="stylesheet" type="text/css" href="FreshEats.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+<!-- The title of the webpage -->
 <Title>About Us </Title>
 </head>
 <style>
+.paragraph {
+  position: -webkit-sticky;
+  position: sticky;
+  font-family: helvetica;
+  font-weight:bold;
+  color: #004d1a;
+  font-size: 16px;
+  background-color: #e0e0d1;
+
+  animation-name: bar;
+  animation-duration: 3s;
+  animation-iteration-count: 20;
+  text-align: center;
+}
+@keyframes bar {
+  from {background-color: white;}
+  to {background-color:   #00ff00;}
+
+}
   </style>
+
+  <!-- The navigation bar repeated on each page -->
   <ul>
 
       <li1 style="float:left"><a href="index.html"><img src="Images/Logo2.jpg"  alt="Avatar" class="image"></a></li1 >
@@ -28,48 +49,67 @@
 
     </ul>
     <body>
-      <h1>Shop</h1>
+      <div class= "paragraph">
+    <h1>Shop</h1>
+        <p>Free merch item with every meal kit and weekly plan!</p>
+
+
+
+
+      <!-- The grid which hold the merchandise as three per line -->
       <div class="grid-container">
-  <div class="grid-item"><img src="Images/Merch1.jpg" height=300px width=300px><form action="/action_page.php">
+  <div class="grid-item" style=font-size:15px; color=#004d1a;><img src="Images/Merch1.jpg" height=300px width=300px><form action="/action_page.php">
   <label for="cars">Choose a colour:</label>
   <select name="cars" id="cars">
     <option value=Pink>Pink</option>
     <option value="Light BLue">Light Blue</option>
-    <option value="opel">Opel</option>
-    <option value="audi">Audi</option>
+    <option value="opel">Dark Blue</option>
+    <option value="audi">Orange</option>
+
+    <option value="audi">Yellow</option>
+    <option value="audi">Black</option>
+    <option value="audi">Red</option>
+
   </select>
   <br><br>
 
 </form>
 <br>
 <input type="button" class="button" value="Add to cart"></div>
-  <div class="grid-item"><img src="Images/Merch2.jpg" height=300px width=300px><br>
+  <div class="grid-item" style=font-size:15px;><img src="Images/Merch2.jpg" height=300px width=300px><br>
+  <br>  <p>$2</p><p>Standard shopper</p>
   <input type="button" class="button" value="Add to cart">
+
 </div>
-  <div class="grid-item"><img src="Images/Merch4.jpg" height=300px width=400px></div>
-  <div class="grid-item"><img src="Images/Merch5.jpg" height=300px width=300px><p>The Ultimate Shopping Bag</p></div>
+  <div class="grid-item" style=font-size:15px><img src="Images/Merch4.jpg" height=300px width=400px><p>$7.50</p><p>Bowl, dinner and lunch plate set</p><input type="button" class="button" value="Add to cart"></div>
+
+  <div class="grid-item"><img src="Images/Merch5.jpg" height=300px width=300px></div>
   <div class="grid-item"><img src="Images/Merch6.jpg" height=300px width=400px></div>
   <div class="grid-item">6</div>
   <div class="grid-item">7</div>
   <div class="grid-item">8</div>
   <div class="grid-item">9</div>
 </div>
+<p><img src="Images/Coverimage2.png" width=100%></p>
 <hr>
 <footer>
-  <div class="grid-container">
-  <div class="grid-item"style= font-size:20px;>Contact<br>Countdown Head Office<br>P O Box 347883<br>Auckland 1041, NZ<br>Ph 0800 FRESH</div>
-  <div class="grid-item"style= font-size:20px>Site Map<a href="OurEats.html"><p>Our Eats</a></p><p>
+  <div class="grid-container" >
+  <div class="grid-item"style= font-size:20px;><b>Contact</b><br><br>Countdown Head Office<br>P O Box 347883<br>Auckland 1041, NZ<br>Ph 0800 FRESH</div>
+  <div class="grid-item"style= font-size:20px;><b>Site Map</b><a href="OurEats.html"><p>Our Eats</a></p><p>
     <a href="AboutUs.html">About Us</a></p>
     <p><a href="Recipes.html">Recipes</a></p>
     <a href="Merch.html">Merch</a></p>
     <a href="News.html">News</a></p>
     <a href="Login.html">Login</a></p>
   </div>
-  <div class="grid-item"><a href="#" class="fa fa-instagram"></a>&emsp;&emsp;<a href="#" class="fa fa-facebook">&ensp;&emsp;&emsp;</a><a href="#" class="fa fa-youtube">&ensp;</a><br></div>
 
-
-
-</footer>
+  <div class="grid-item"><div class="icon-bar">
+      <div class="paragraph"style= font-size:20px;><p>Follow us!</p></div>
+<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+<a href="#" class="google"><i class="fa fa-google"></i></a>
+<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+<a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
 
 
 </body>
