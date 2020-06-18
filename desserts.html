@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="FreshEats.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<Title>FreshEats </Title>
+</head>
+<body>
+<ul>
+
+    <li1 style="float:left"><a href="index.html"><img src="Images/Logo2.jpg"  alt="Avatar" class="image"></a></li1 >
+<li style="float:left"><a href=OurEats.html>Our Eats</a></li>
+    <li style="float:left"><a href="AboutUs.html">About us</a></li>
+    <li style="float:left"><a href="Recipes.html">Recipes</a></li>
+    <li style="float:left"><a href="Merch.html">Merch</a>  </li>
+    <li style="float:left">    <a href="News.html">News</a></li>
+    <li style="float:right"><a href="login.html">Log in</a></li>
+    <li style="float:right"><a href="registration.html">Register</a></li>
+
+  </ul>
+  </div>
+  <br>
+
+
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <button class="tablink" onclick="openPage('Desserts', this, 'green')"id="defaultOpen">Desserts</button>
+
+
+
+  <div id="Desserts" class="tabcontent">
+
+    <img src="Images/pavlova.jpg" width=32% >
+    <img src="Images/pudding.jpg" width=32% >
+    <img src="Images/chocolate.jpg" width=32% >
+    <div class="btn-group">
+    <button class="button">Add ingredients to Countdown cart</button>
+    <a href="Recipes.html">  <button class="button" style="margin-left:20px;">Ingredients</button></a>
+    <a href="Recipes.html">  <button class="button" style="margin-left:20px;">Ingredients</button></a>
+<br>
+<br>
+<br>
+<br>
+
+    <img src="Images/carrotcake.jpg" width=32% >
+    <img src="Images/choctrifle.jpg" width=32% >
+    <img src="Images/mangodessert.jpg" width=32% >
+
+    <div class="btn-group">
+    <button class="button">Add ingredients to Countdown cart</button>
+  <a href="Recipes.html">  <button class="button" style="margin-left:20px;">Ingredients</button></a>
+  <a href="Recipes.html">  <button class="button" style="margin-left:20px;">Ingredients</button></a>
+
+  </div>
+
+  <p style="clear:both"><br></p>
+  </div>
+
+</div>
+
+<p style="clear:both"><br></p>
+</div>
+
+<div id="Vegetarian" class="tabcontent">
+
+  <img src="Images/Mealkit.jpg" width=32% height=>
+</div>
+
+<div id="Indian" class="tabcontent">
+  <img src="Images/Mealkit.jpg" width=32% height=>
+</div>
+
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+  <button class="open-button" onclick="openForm()">Need help?</button>
+
+  <div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Chat to us!</h1>
+
+      <label for="msg"><b>Hi, how can we help today?</b></label>
+      <textarea placeholder="Type message.." name="msg" required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+  <script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+  <hr>
+  <!-- The footer which helps you navigate the site if you scrolled too far down -->
+    <footer>
+      <div class="grid-container" >
+      <div class="grid-item" style="font-size:15px;"><b><u>Contact</u></b><br><br>Countdown Head Office<br>P O Box 347883<br>Auckland 1041, NZ<br>Ph 0800 FRESH</div>
+      <div class="grid-item" style="font-size:15px;"><b><u>Menu</u></b><p><a href="OurEats.html">Our Eats</a></p><p>
+        <a href="AboutUs.html">About Us</a></p>
+        <p><a href="Recipes.html">Recipes</a></p>
+  		<p><a href="Merch.html">Merch</a></p>
+        <p><a href="News.html">News</a><br></p>
+        <p><a href="login.html">Login</a></p>
+      </div>
+
+      <div class="grid-item"><div class="icon-bar">
+          <div class="paragraph" style="font-size:15px;"><p>Follow us!</p></div>
+    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="google"><i class="fa fa-google"></i></a>
+    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+
+    <br>
+    <br>
+    <br>
+    <div class="paragraph" style="font-size:15px;"><p><i>Get the app!</i></p></div>
+    <a href="#"><img src="Images/app.jpg"></a>
+
+
+
+
+  </footer>
+
+
+</body>
+</html>
