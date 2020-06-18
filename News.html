@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="FreshEats.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The title of the webpage -->
+<Title>News </Title>
+</head>
+<style>
+  </style>
+
+
+<!-- The navigation bar repeated on each page for continuity -->
+  <ul>
+
+      <li1 style="float:left"><a href="index.html"><img src="Images/Logo2.jpg"  alt="Avatar" class="image"></a></li1 >
+  <li style="float:left"><a href=OurEats.html>Our Eats</a></li>
+      <li style="float:left"><a href="AboutUs.html">About us</a></li>
+      <li style="float:left"><a href="Recipes.html">Recipes</a></li>
+      <li style="float:left"><a href="Merch.html">Merch</a>  </li>
+      <li style="float:left">    <a href="News.html">News</a></li>
+      <li style="float:right"><a href="javascript:void(0)">Log in</a></li>
+      <li style="float:right"><a href="javascript:void(0)">Register</a></li>
+      <li style="search-container"><form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+
+          </form></li>
+
+
+    </ul>
+    <body>
+
+<h1>News FreshEats </h1>
+ <br>
+
+
+
+<!-- text alignment -->
+<div class="newstextalign">
+<p><font size="10" face="aerial color="blue">Countdown gives most of its workers shares in the company </p>
+
+
+
+ <div class="item10" style=font-size:20px;><p>Countdown staff will be given a stake in the company.The supermarket chain has announced it is awarding A$750 (NZ$808) of Woolworths Group shares to 14,400 Kiwi employees across 183 stores and distribution centres.Australian-based Woolworths Group owns Countdown in New Zealand.Countdown managing director Natalie Davis said the shares recognised the role staff played to keep the stores open during the lockdown.</p>
+ </div>
+<!-- javascript for image slide -->
+<script>
+	var i = 0; // Start point
+	var images = [];
+	var time = 1000;
+
+	// Image List
+	images[0] = 'Images/image1.jpg';
+	images[1] = 'Images/image2.jpg';
+	images[2] = 'Images/image3.jpg';
+
+
+	// Change Image
+	function changeImg(){
+		document.slide.src = images[i];
+
+		if(i < images.length - 1){
+			i++;
+		} else {
+			i = 0;
+		}
+
+		setTimeout("changeImg()", time);
+	}
+
+	window.onload = changeImg;
+
+</script>
+
+<img name="slide" width="600" height="400">
+
+
+
+
+
+ <div class="item10" style=font-size:20px;><p>"Their passion and dedication to our customers, their care for their local communities and to each other over this very challenging time has been incredible, and we are immensely grateful."Davis said the company wanted employees to have a stake in the future of the business.
+“Our frontline team members are the face, heart and centre of our business. As we look forward and work as a team together to help build a better tomorrow for our country, we want to recognise our team’s role in that, and give them ownership of the huge part they play in creating it.”
+Countdown employs 20,373 staff across its supermarkets, distribution centres, processing plants and support offices.
+Staff who weren't eligible for the share award included employees who already received incentives as part of their employment with Countdown, those employed after March 1 and non-permanent staff.
+Shares in Woolworths Group were trading at A$35.2 on the Australian Stock Exchange on Tuesday.First Union secretary for retail, finance and commerce, Tali Williams, said staff were feeling generally positive about the company's offer.</p>
+</div>
+
+
+<hr>
+
+<p><font size="10" face="aerial color="blue">Countdown Brings FreshEats App </p>
+
+<img src="Images/iphoneapp.png" >
+
+
+<!-- text alignment -->
+
+<div class="item10" style=font-size:20px;><p>Create and manage your shopping list on the go, quickly add items to your list with barcode scanner and have your shopping list organised by aisle to help you save time.</p>
+ </div>
+ <div class="item10" style=font-size:20px;><p>Shop your favourite products by adding them directly to your shopping list or browse our weekly mailer.</p>
+ </div>
+ <div class="item10" style=font-size:20px;><p>View your Onecard balance in real time, whether you're registered to earn Onecard points or AA Smartfuel discounts.</p>
+ </div>
+ <div class="item10" style=font-size:20px;><p>Send your shopping list directly to our online shopping website. Look out for the icon at the top right of your screen.</p>
+ </div>
+<div class="item10" style=font-size:20px;><p>Let us know when you're on your way to the store and we'll have your shopping ready for your arrival.</p>
+ </div>
+
+<hr>
+<!-- The footer which helps you navigate the site if you scrolled too far down -->
+  <footer>
+    <div class="grid-container" >
+    <div class="grid-item"style= font-size:15px;><b><u>Contact</u></b><br><br>Countdown Head Office<br>P O Box 347883<br>Auckland 1041, NZ<br>Ph 0800 FRESH</div>
+    <div class="grid-item"style= font-size:15px;><b><u>Site Map</u></b><a href="OurEats.html"><p>Our Eats</a></p><p>
+      <a href="AboutUs.html">About Us</a></p>
+      <p><a href="Recipes.html">Recipes</a></p>
+      <a href="Merch.html">Merch</a></p>
+      <a href="News.html">News</a></p>
+      <a href="Login.html">Login</a></p>
+    </div>
+
+    <div class="grid-item"><div class="icon-bar">
+        <div class="paragraph"style= font-size:15px;><p>Follow us!</p></div>
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="google"><i class="fa fa-google"></i></a>
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+
+  <br>
+  <br>
+  <br>
+  <div class="paragraph"style= font-size:15px;><p><i>Get the app!</i></p></div>
+  <a href="#"><img src="Images/app.jpg"></a>
+
+
+
+
+
+</footer>
+
+
+</body>
+</html>

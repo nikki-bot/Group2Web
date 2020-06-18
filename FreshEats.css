@@ -261,3 +261,18 @@ color:#004d1a}
   margin-left: 75px;
   font-size: 30px;
 }
+
+.newstextalign {
+	text-align:center;
+	
+}
+
+.item10 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-family: sans-serif;
+  color: green;
+  
+}
+
+

@@ -21,6 +21,7 @@
   clear: both;
   display: table;
 }
+/* In order to flip the images hese "flip boxes" will ensure each image flips */
 .flip-box {
   background-color: transparent;
   width: 400px;
@@ -67,7 +68,7 @@
 <body>
 
 
-
+<!-- The nav bar repeated on each page for continuity -->
 
 <ul>
 
@@ -82,10 +83,10 @@
 
   </ul>
   </div>
+
+  <!-- Breaks will ensure adequate spacing between content -->
   <br>
 
-
-
 <br>
 <br>
 <br>
@@ -94,12 +95,12 @@
 <br>
 <br>
 <br>
-
+<!-- These are the coloured tabs to seperate each Our Eats services -->
   <button class="tablink" onclick="openPage('EatsforOne', this, 'green')"id="defaultOpen">Eats for One</button>
   <button class="tablink" onclick="openPage('EatsforTwo', this, '#009900')" >Eats for Two</button>
   <button class="tablink" onclick="openPage('EatsforFlatorFamily', this, )">Eats for a Flat or Family</button>
 
-
+<!-- This is the first tab for Eats for one -->
   <div id="EatsforOne" class="tabcontent">
 
     <div class="row">
@@ -211,7 +212,7 @@
 
   <p style="clear:both"><br></p>
 
-
+<!-- This is the second tab content for Eats for Two -->
   <div id="EatsforTwo" class="tabcontent">
     <img src="Images/Mealkit.jpg" width=32% height=>
     <img src="Images/Duo1.png" width=32%>
@@ -222,7 +223,7 @@
   </div>
 
 <img src="Images/Coverimage2.png" width=100%>
-
+<!-- This is the chat window -->
   <script>
   function openPage(pageName,elmnt,color) {
     var i, tabcontent, tablinks;
